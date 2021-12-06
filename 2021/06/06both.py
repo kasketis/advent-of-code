@@ -1,5 +1,4 @@
-from collections import deque
-from collections import Counter
+from collections import Counter, deque
 
 with open("input.txt") as f:
     lanternfishes = Counter(map(int, f.read().split(",")))
@@ -13,6 +12,7 @@ def total_lanternfishes(init_lanternfishes: Counter, after_days: int) -> int:
         c = {k: v for k, v in zip(c, rotated_values)}
         c[6] += c[8]
     return sum(c.values())
+
 
 # 06
 print(total_lanternfishes(init_lanternfishes=lanternfishes, after_days=80))
