@@ -5,13 +5,13 @@ with open("input.txt") as f:
 
 
 def total_lanternfishes(init_lanternfishes: Counter, after_days: int) -> int:
-    c = {i: init_lanternfishes[i] for i in range(9)}
+    day_counter = {i: init_lanternfishes[i] for i in range(9)}
     for day in range(after_days):
-        rotated_values = deque(c.values())
-        rotated_values.rotate(-1)
-        c = {k: v for k, v in zip(c, rotated_values)}
-        c[6] += c[8]
-    return sum(c.values())
+        next_day_counter = deque(day_counter.values())
+        next_day_counter.rotate(-1)
+        day_counter = {k: v for k, v in zip(day_counter, next_day_counter)}
+        day_counter[6] += day_counter[8]
+    return sum(day_counter.values())
 
 
 # 06
