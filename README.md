@@ -14,3 +14,4 @@ these yourself from the AoC website.
 - Day 4: [Giant Squid](2021/04) ⭐⭐️
 - Day 5: [Hydrothermal Venture](2021/05) ⭐⭐️
 - Day 6: [Lanternfish](2021/06) ⭐⭐️
+- Day 7: [The Treachery of Whales](2021/07) ⭐⭐️
