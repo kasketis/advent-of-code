@@ -15,3 +15,4 @@ these yourself from the AoC website.
 - Day 5: [Hydrothermal Venture](2021/05) ⭐⭐️
 - Day 6: [Lanternfish](2021/06) ⭐⭐️
 - Day 7: [The Treachery of Whales](2021/07) ⭐⭐️
+- Day 8: [Seven Segment Search](2021/08) ⭐⭐️
