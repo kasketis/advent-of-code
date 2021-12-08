@@ -36,7 +36,7 @@ with open("input.txt") as f:
 output_sum = 0
 for line in lines:
     patterns, output = (x.split() for x in line.split("|"))
-    patterns_map = dict(zip(range(11), patterns))
+    patterns_map = dict(zip(range(len(MAP)+1), patterns))
 
     char_map = {
         k2: k1
