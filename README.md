@@ -18,3 +18,4 @@ these yourself from the AoC website.
 - Day 8: [Seven Segment Search](2021/08) ⭐⭐️
 - Day 9: [Smoke Basin](2021/09) ⭐⭐️
 - Day 10: [Syntax Scoring](2021/10) ⭐⭐️
+- Day 11: [Dumbo Octopus](2021/11) ⭐⭐️
