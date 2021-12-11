@@ -3,7 +3,7 @@ from __future__ import annotations
 import sys
 from itertools import chain
 
-FLASH_ENERGY_THRESHOLD = 9
+ENERGY_FLASH_THRESHOLD = 9
 FLASHED_TAG = -sys.maxsize
 
 
@@ -22,28 +22,28 @@ def adjacents(x: int, bound_x: int, bound_y: int) -> set[int]:
 with open("input.txt") as f:
     lines = list(map(lambda x: [int(i) for i in x], f.read().splitlines()))
 line_bound = len(lines[0])
-flat_line = list(chain(*lines))
+dumbos = list(chain(*lines))
 
 step = 0
-while sum(flat_line) != 0:
+while sum(dumbos) != 0:
     # step 1 - increase energy
-    flat_line = [x + 1 for x in flat_line]
+    dumbos = [energy + 1 for energy in dumbos]
 
     # step 2 - traverse and flash
-    while max(flat_line) > FLASH_ENERGY_THRESHOLD:
+    while max(dumbos) > ENERGY_FLASH_THRESHOLD:
         to_flash = (
             index
-            for index, energy in enumerate(flat_line)
-            if energy > FLASH_ENERGY_THRESHOLD
+            for index, energy in enumerate(dumbos)
+            if energy > ENERGY_FLASH_THRESHOLD
         )
-        for flash_x in to_flash:
-            flat_line[flash_x] = FLASHED_TAG  # flashed
-            for adj_x in adjacents(flash_x, line_bound, len(flat_line)):
-                if flat_line[adj_x] != FLASHED_TAG:
-                    flat_line[adj_x] += 1
+        for index in to_flash:
+            dumbos[index] = FLASHED_TAG  # flashed
+            for adj_index in adjacents(index, line_bound, len(dumbos)):
+                if dumbos[adj_index] != FLASHED_TAG:
+                    dumbos[adj_index] += 1
 
     # step 3 - reset
-    flat_line = [0 if x == FLASHED_TAG else x for x in flat_line]
+    dumbos = [0 if energy == FLASHED_TAG else energy for energy in dumbos]
 
     step += 1
 print(step)
