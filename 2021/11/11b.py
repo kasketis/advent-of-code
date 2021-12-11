@@ -25,7 +25,7 @@ line_bound = len(lines[0])
 flat_line = list(chain(*lines))
 
 step = 0
-while True:
+while sum(flat_line) != 0:
     # step 1 - increase energy
     flat_line = [x + 1 for x in flat_line]
 
@@ -46,6 +46,4 @@ while True:
     flat_line = [0 if x == FLASHED_TAG else x for x in flat_line]
 
     step += 1
-    if sum(flat_line) == 0:
-        break
 print(step)
