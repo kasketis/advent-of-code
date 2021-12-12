@@ -19,3 +19,4 @@ these yourself from the AoC website.
 - Day 9: [Smoke Basin](2021/09) ⭐⭐️
 - Day 10: [Syntax Scoring](2021/10) ⭐⭐️
 - Day 11: [Dumbo Octopus](2021/11) ⭐⭐️
+- Day 12: [Passage Pathing](2021/12) ⭐⭐️
