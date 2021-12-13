@@ -20,3 +20,4 @@ these yourself from the AoC website.
 - Day 10: [Syntax Scoring](2021/10) ⭐⭐️
 - Day 11: [Dumbo Octopus](2021/11) ⭐⭐️
 - Day 12: [Passage Pathing](2021/12) ⭐⭐️
+- Day 13: [Transparent Origami](2021/13) ⭐⭐️
