@@ -23,3 +23,4 @@ these yourself from the AoC website.
 - Day 13: [Transparent Origami](2021/13) ⭐⭐️
 - Day 14: [Extended Polymerization](2021/14) ⭐⭐️
 - Day 15: [Chiton](2021/15) ⭐⭐️
+- Day 16: [Packet Decoder](2021/16) ⭐⭐️
