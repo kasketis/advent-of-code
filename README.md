@@ -25,3 +25,4 @@ these yourself from the AoC website.
 - Day 15: [Chiton](2021/15) ⭐⭐️
 - Day 16: [Packet Decoder](2021/16) ⭐⭐️
 - Day 17: [Trick Shot](2021/17) ⭐⭐️
+- Day 18: [Snailfish](2021/18) ⭐⭐️
