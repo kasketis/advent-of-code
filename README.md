@@ -26,3 +26,4 @@ these yourself from the AoC website.
 - Day 16: [Packet Decoder](2021/16) ⭐⭐️
 - Day 17: [Trick Shot](2021/17) ⭐⭐️
 - Day 18: [Snailfish](2021/18) ⭐⭐️
+- Day 19: [Beacon Scanner](2021/19) ⭐⭐️
