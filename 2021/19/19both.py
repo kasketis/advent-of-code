@@ -72,19 +72,19 @@ def viewpoint(base: Scanner, to: Scanner) -> Iterator[tuple[set[Position], Posit
                 yield absolute_beacon_positions, (dx, dy, dz)
 
 
-checked_scanners = set()
+checked_scanner_ids = set()
 paired_scanner_ids = {0}
 while len(paired_scanner_ids) != len(scanners):
     paired_scanners = [
         scanner
         for scanner in scanners
-        if scanner.id_ in paired_scanner_ids and scanner.id_ not in checked_scanners
+        if scanner.id_ in paired_scanner_ids and scanner.id_ not in checked_scanner_ids
     ]
     unpaired_scanners = [
         scanner for scanner in scanners if scanner.id_ not in paired_scanner_ids
     ]
     for paired_scanner in paired_scanners:
-        checked_scanners.add(paired_scanner.id_)
+        checked_scanner_ids.add(paired_scanner.id_)
         for unpaired_scanner in unpaired_scanners:
             for beacon_positions, scanner_position in viewpoint(
                 base=paired_scanner, to=unpaired_scanner
