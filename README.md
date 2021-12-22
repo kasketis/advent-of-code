@@ -27,3 +27,5 @@ these yourself from the AoC website.
 - Day 17: [Trick Shot](2021/17) ⭐⭐️
 - Day 18: [Snailfish](2021/18) ⭐⭐️
 - Day 19: [Beacon Scanner](2021/19) ⭐⭐️
+- Day 22: [Reactor Reboot](2021/22) ⭐⭐️
+
